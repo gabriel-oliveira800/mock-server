@@ -1,0 +1,22 @@
+name: mock_server
+description: "A new Flutter package project."
+version: 0.0.1
+
+environment:
+  sdk: ^3.5.3
+  flutter: ">=1.17.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  shelf: ^1.4.1
+  shelf_router: ^1.1.4
+  talker_logger: ^4.4.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^4.0.0
+  checks: ^0.3.0

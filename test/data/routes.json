@@ -1,0 +1,45 @@
+{
+    "get-posts": {
+        "method": "GET",
+        "path": "/posts/",
+        "status": 200,
+        "timeout": 1000,
+        "response": [
+            {
+                "id": "1",
+                "title": "a title"
+            },
+            {
+                "id": "2",
+                "title": "another title"
+            }
+        ]
+    },
+    "get-posts-with-error": {
+        "method": "GET",
+        "path": "/posts/",
+        "error": {
+            "status": 500,
+            "message": "Internal server error"
+        }
+    },
+    "get-posts-with-error-in-headers": {
+        "method": "GET",
+        "path": "/posts/",
+        "headers": {
+            "Content-Type": "application/json",
+            "x-error-simulated": {
+                "status": 1234,
+                "message": "Internal server error"
+            }
+        }
+    },
+    "get-posts-with-error-in-headers-boolean": {
+        "method": "GET",
+        "path": "/posts/",
+        "headers": {
+            "Content-Type": "application/json",
+            "x-error-simulated": true
+        }
+    }
+}
